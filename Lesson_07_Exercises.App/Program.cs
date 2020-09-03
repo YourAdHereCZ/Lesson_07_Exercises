@@ -8,7 +8,6 @@ namespace Lesson_07_Exercises.App
         private static void Main()
         {
             #region NumberHandler examples
-
             var handler = new NumberHandler();
             int[] numbers = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 18, 19, 20 };
 
@@ -63,12 +62,10 @@ namespace Lesson_07_Exercises.App
                 Console.Write($"{i}, ");
             }
             Console.WriteLine();
-
             #endregion
 
 
             #region ChessPlayerParser examples
-
             ChessPlayer[] top10july2000 = {
                 new ChessPlayer("Garry", "Kasparov", 47, 2849, Country.Russia),
                 new ChessPlayer("Vladimir", "Kramnik", 25, 2770, Country.Russia),
@@ -97,7 +94,6 @@ namespace Lesson_07_Exercises.App
             };
 
             var parser1 = new ChessPlayersParser(top10july2000);
-
             var parser2 = new ChessPlayersParser(top10september2020);
 
             var between2700and2750ELOinJuly2000 = parser1.GetChessPlayersInEloRatingRange(2700, 2750);
@@ -155,7 +151,6 @@ namespace Lesson_07_Exercises.App
             }
             Console.WriteLine();
 
-
             Console.WriteLine("Top 10 players of ELO 2700 or greater grouped by country in July 2000: ");
             foreach (var grouping in higherThan2700ELOgroupedByCountryInJuly2000)
             {
@@ -181,7 +176,6 @@ namespace Lesson_07_Exercises.App
                 Console.WriteLine();
             }
             Console.WriteLine();
-
 
             #endregion
         }
