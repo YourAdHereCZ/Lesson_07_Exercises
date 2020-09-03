@@ -11,5 +11,14 @@ namespace Lesson_07_Exercises.App
         public int EloRating { get; set; }
         public TimeSpan ThisYearTrainingTime { get; set; }
         public Country Country { get; set; }
+
+        public ChessPlayer(string firstName, string lastName, int ageInYears, int eloRating, Country country)
+        {
+            FirstName = firstName;
+            LastName = lastName;
+            AgeInYears = ageInYears;
+            EloRating = eloRating;
+            Country = country;
+        }
     }
 }
