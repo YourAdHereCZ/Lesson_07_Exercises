@@ -155,6 +155,34 @@ namespace Lesson_07_Exercises.App
             }
             Console.WriteLine();
 
+
+            Console.WriteLine("Top 10 players of ELO 2700 or greater grouped by country in July 2000: ");
+            foreach (var grouping in higherThan2700ELOgroupedByCountryInJuly2000)
+            {
+                Console.WriteLine($"{grouping.Key}: ");
+                foreach (var player in grouping)
+                {
+                    Console.Write($"{player.FirstName} {player.LastName}; ");
+                }
+
+                Console.WriteLine();
+            }
+            Console.WriteLine();
+
+            Console.WriteLine("Top 10 players of ELO 2700 or greater grouped by country in September 2020: ");
+            foreach (var grouping in higherThan2700ELOgroupedByCountryInSeptember2020)
+            {
+                Console.WriteLine($"{grouping.Key}: ");
+                foreach (var player in grouping)
+                {
+                    Console.Write($"{player.FirstName} {player.LastName}; ");
+                }
+
+                Console.WriteLine();
+            }
+            Console.WriteLine();
+
+
             #endregion
         }
     }
